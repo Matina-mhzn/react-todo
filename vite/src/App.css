@@ -1,32 +1,103 @@
-.container{
-    width: 400px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding:10px 40px;
-    background-color: white;
-    height: 400px;
+/* Reset default browser styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Page background */
+body{
+  /* background: linear-gradient(135deg, #6dd5ed, #2193b0); */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main box */
 .box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(230, 229, 229);
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
-input{
-    padding: 10px;
-    width: 100%;
+
+/* Heading */
+.container h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
-button{
-    padding: 10px 30px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    /* font-weight: 600; */
-    font-size: 18px;
-}
+
+/* Input section */
 .input-box{
-    display: flex;
+  display: flex;
+  gap: 10px;
+}
+
+/* Input field */
+.input-box input{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Add button */
+.input-box button{
+  padding: 10px 15px;
+  border: none;
+  background: #21b02f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-box button:hover{
+  background: #176d86;
+}
+
+/* Task list */
+.tasks{
+  margin-top: 15px;
+}
+
+.tasks ol{
+  list-style: none;
+}
+
+/* Each task item */
+.task{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+/* Task text */
+.text{
+  font-size: 16px;
+  color: #333;
+}
+
+/* Delete button */
+.dltbtn{
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dltbtn:hover{
+  background: #cc0000;
 }
